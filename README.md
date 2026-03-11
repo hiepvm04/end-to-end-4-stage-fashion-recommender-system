@@ -99,7 +99,7 @@ Open the terminal and run the commands one by one, or use `make all` to run ever
   ```
 
 * **Windows (using `uv` directly):**
-  ```powershell
+```powershell
   uv run ipython notebooks/1_fp_computing_features.ipynb
   uv run ipython notebooks/2_tp_training_retrieval_model.ipynb
   uv run ipython notebooks/3_tp_training_ranking_model.ipynb
