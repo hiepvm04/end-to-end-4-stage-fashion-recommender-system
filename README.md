@@ -78,7 +78,7 @@ You can run the entire pipeline step-by-step using `make` commands (Linux/macOS)
 Execute the notebooks sequentially in order:
 * **Linux/macOS (using `make`):** 
 Open the terminal and run the commands one by one, or use `make all` to run everything:
-
+```bash
 # 1. Feature Engineering (Process features and store them in the Feature Store)
 make feature-engineering
 
@@ -96,6 +96,7 @@ make create-deployments
 
 # 6. Schedule Automated Materialization Jobs
 make schedule-materialization-jobs
+```
 
 * **Windows (using `uv` directly):**
   ```powershell
