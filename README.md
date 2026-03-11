@@ -37,7 +37,7 @@ Dự án sử dụng trình quản lý gói `uv` để quản lý môi trường
 
 **Bước 1: Clone kho lưu trữ repository**
 ```bash
-git clone <repository_url>
+git clone <https://github.com/hiepvm04/end-to-end-4-stage-fashion-recommender-system.git>
 cd end-to-end-4-stage-fashion-recommender-system
 ```
 
