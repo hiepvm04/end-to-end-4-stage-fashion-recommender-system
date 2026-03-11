@@ -38,7 +38,7 @@ Dự án sử dụng trình quản lý gói `uv` để quản lý môi trường
 **Bước 1: Clone kho lưu trữ repository**
 ```bash
 git clone <repository_url>
-cd personalized-recommender-course
+cd end-to-end-4-stage-fashion-recommender-system
 ```
 
 **Bước 2: Cài đặt Python 3.11+ (nếu chưa có sẵn)**
@@ -116,7 +116,7 @@ Xem danh sách đầy đủ tại `pyproject.toml`.
 
 ## Lỗi đã biết (Known Issues)
 
-1. **Khởi động Deployment chậm:** Lần đầu gọi mô hình qua API của Hopsworks có thể mất một chút thời gian (Cold Start). Khi đó UI trên Streamlit có thể phản hồi chậm.
+1. **Khởi động Deployment chậm:** Lần đầu gọi mô hình qua API của Hopsworks có thể mất một chút thời gian. Khi đó UI trên Streamlit có thể phản hồi chậm.
 2. **Hết bộ nhớ (Out-of-Memory / OOM):** Quá trình huấn luyện (`train-retrieval`) có thể ngốn RAM nếu bạn chạy trên máy tính cá nhân. Có thể chỉnh `CUSTOMER_DATA_SIZE = CustomerDatasetSize.SMALL` trong file `recsys/config.py` để giảm tải.
 3. **Giới hạn API:** Tính năng LLM Ranking sử dụng OpenAI API, có thể gặp lỗi Rate Limit (429) đối với các tài khoản miễn phí.
 
