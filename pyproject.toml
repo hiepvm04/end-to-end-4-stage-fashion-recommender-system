@@ -25,4 +25,11 @@ dependencies = [
 [dependency-groups]
 dev = [
     "ruff>=0.7.2",
+    "pytest>=8.0.0",
 ]
+
+[tool.uv]
+override-dependencies = [
+    "tensorflow-io-gcs-filesystem==0.31.0"
+]
+

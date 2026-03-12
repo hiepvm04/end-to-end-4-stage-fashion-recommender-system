@@ -95,10 +95,11 @@ def calculate_month_sin_cos(month: pl.Series) -> pl.DataFrame:
     C = 2 * np.pi / 12
     return pl.DataFrame(
         {
-            "month_sin": month.apply(lambda x: np.sin(x * C)),
-            "month_cos": month.apply(lambda x: np.cos(x * C)),
+            "month_sin": (month.cast(pl.Float64) * C).sin(),
+            "month_cos": (month.cast(pl.Float64) * C).cos(),
         }
     )
+
 
 
 def convert_t_dat_to_epoch_milliseconds(df: pl.DataFrame) -> pl.Series:
