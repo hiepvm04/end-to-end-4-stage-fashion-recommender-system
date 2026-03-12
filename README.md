@@ -3,7 +3,6 @@
 ![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)
 ![Dependencies](https://img.shields.io/badge/dependencies-uv-success)
 ![Platform](https://img.shields.io/badge/platform-Hopsworks-orange)
-![Status](https://img.shields.io/badge/status-Personal%20Project-purple)
 
 ## 📖 Project Context
 
